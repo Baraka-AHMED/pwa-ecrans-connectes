@@ -1,7 +1,7 @@
 import Page from '../components/page'
 import Section from '../components/section'
 import Button from '../components/input/button'
-
+import SchedulePage from '../pages/schedule'
 import { Settings } from 'react-feather'
 
 export default () => {
@@ -15,6 +15,8 @@ export default () => {
           Paramètres
         </Button>
       </Section>
+
+    
 
     </Page>
   )

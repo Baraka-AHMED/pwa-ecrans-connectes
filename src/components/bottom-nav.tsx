@@ -29,7 +29,7 @@ const BottomNav = () => {
   const { pathname } = useRouter()
 
   return (
-    <nav className="bg-white border-t-2 border-gray-100 dark:bg-purple-500 dark:border-opacity-25">
+    <nav className="bg-white border-t-2 border-gray-100 dark:bg-gray-500 dark:border-opacity-25">
       <div>
         {links.map(link => (
           <Link href={link.href} key={link.title}>

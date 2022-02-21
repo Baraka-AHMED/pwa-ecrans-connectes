@@ -30,7 +30,7 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="bg-white border-b-2 border-gray-100 dark:border-opacity-25 dark:bg-purple-500">
+    <header className="bg-white border-b-2 border-gray-100 dark:border-opacity-25 dark:bg-gray-500">
       <Brand />
 
       <div style={{ flex: 1 }} />
