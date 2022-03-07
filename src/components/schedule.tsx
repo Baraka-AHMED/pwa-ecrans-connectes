@@ -68,7 +68,7 @@ const Schedule = ({ data } : Props) => {
                 </div>
             {courses.sort((a: { start: Date }, b: { start: Date }) => b.start?.getTime() - a.start?.getTime()).reverse().map((course, j) =>
                     <div className="py-6" key={i + '-' + j}>
-                    <div className={`p-4 shadow-x1 sm:p-6 rounded-xl ${course.ongoing ? 'bg-green-500' : ''}`}>
+                    <div className={`p-4 shadow-x1 sm:p-6 rounded-xl ${course.ongoing ? 'bg-green-500' : 'dark:bg-grey-700 border border-solid border-grey-800'}`}>
                             <div className="flex flex-row justify-between align-center">
                                 <div className="flex flex-col">
                                     <h2 className="text-3xl font-light text-gray-800 dark:text-white">{course.label.replace(/\*/g, '').replace('(INFO)', '').replace(/TD G.*/g, '').trim()}</h2>
@@ -86,7 +86,6 @@ const Schedule = ({ data } : Props) => {
                                             </i>
                                         </div>
                             
-
                             <div className="flex flex-col items-center justify-center">
 
                                 <div className="relative w-full h-32 p-4 mt-4 bg-center bg-cover rounded-lg shadow-xl bg-gradient-to-r from-blue-50 to-blue-100 dark:from-purple-100 dark:to-purple-200">
@@ -99,11 +98,9 @@ const Schedule = ({ data } : Props) => {
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 )}
             </div>))}
-
         </>
     }
 
